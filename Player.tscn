@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs1vfk2m3xt6p"]
+
+[ext_resource type="Texture2D" uid="uid://c6wystiftjkgr" path="res://pegasus.png" id="1_1g7pr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88b1f"]
+size = Vector2(36, 36)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1g7pr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_88b1f")
