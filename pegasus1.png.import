@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6wystiftjkgr"
-path="res://.godot/imported/pegasus.png-4243b1c029385da4b94e5cf765096de2.ctex"
+uid="uid://b5yjl7hqcqefv"
+path="res://.godot/imported/pegasus1.png-6999e870a92cb8bc8771a6c1ae2e1dc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pegasus.png"
-dest_files=["res://.godot/imported/pegasus.png-4243b1c029385da4b94e5cf765096de2.ctex"]
+source_file="res://pegasus1.png"
+dest_files=["res://.godot/imported/pegasus1.png-6999e870a92cb8bc8771a6c1ae2e1dc5.ctex"]
 
 [params]
 

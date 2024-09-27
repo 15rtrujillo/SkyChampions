@@ -1,14 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs1vfk2m3xt6p"]
+[gd_scene load_steps=5 format=3 uid="uid://bs1vfk2m3xt6p"]
 
-[ext_resource type="Texture2D" uid="uid://c6wystiftjkgr" path="res://pegasus.png" id="1_1g7pr"]
+[ext_resource type="Texture2D" uid="uid://c6wystiftjkgr" path="res://pegasus0.png" id="1_1g7pr"]
+[ext_resource type="Texture2D" uid="uid://b5yjl7hqcqefv" path="res://pegasus1.png" id="2_1sd8b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_if7k6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1g7pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1sd8b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88b1f"]
 size = Vector2(36, 36)
 
 [node name="Player" type="CharacterBody2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_1g7pr")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_if7k6")
+frame_progress = 0.209199
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
